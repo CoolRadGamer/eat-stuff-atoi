@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #05050a;
+}
+
+canvas {
+    display: block;
+}
+
+#buttons {
+    position: absolute;
+    bottom: 8vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    pointer-events: auto;
+    user-select: none;
+}
+
+#buttons button {
+    padding: 1.2vh 2.4vw;
+    font-size: 2.4vh;
+    font-family: monospace;
+    background: #05050a;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 0.6vh;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#buttons button:hover {
+    background: #ffffff;
+    color: #05050a;
+}
+
+#buttons.hidden {
+    display: none;
+}
